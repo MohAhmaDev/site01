@@ -1,0 +1,141 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'POP', sans-serif;
+}
+.container-cardSH
+{
+	padding: 25px;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #17a2b8;
+}
+.card-sh
+{
+	position: relative;
+	height: 500px;
+	width: 750px;
+	font-family: 'POP' , sans-serif ;	
+	background: #262626 ;
+	overflow: hidden;
+	background: rgba(255, 255, 255, 0.1);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+
+}
+.checkbox-sh,
+.toggle-sh
+{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	bottom: 20px;
+	right: 20px;
+	outline: none;
+	z-index: 10;
+}
+.checkbox-sh
+{
+	opacity: 0;
+}
+.toggle-sh
+{
+	pointer-events: none;
+	border-radius: 50% ;
+	background: #fff;
+	transition: 0.5s ;
+	text-align: center;
+	line-height: 50px;
+	font-size: 40px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.checkbox-sh:checked ~ .toggle-sh
+{
+	background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 0 850px rgba(0, 0, 0, 0.1);
+	transform: rotate(225deg);
+}
+.img_bx-sh img
+{
+	object-fit: cover;
+}
+.img_bx-sh,.contenu-sh
+{
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 100%;
+	height: 100%;
+}
+.contenu-sh
+{
+	padding: 50px;
+	box-sizing: border-box;
+	z-index: 11;
+	pointer-events: none;
+	transition: 0.5s;
+	opacity: 0 ;
+}
+
+.checkbox-sh:checked ~.contenu-sh
+{
+	opacity: 1;
+	transition-delay: 0.5s;
+}
+
+.contenu-sh h2
+{
+	margin-bottom: 5px;
+	font-size: 35px;
+	color:#fff;
+    text-shadow: 2px 2px 4px #000000;	
+}
+.contenu-sh p
+{
+	color:#fff;
+	font-size: 20px;
+    line-height: 40px;		
+}
+
+
+
+
+.cl-M
+{
+  padding-left: 20px;
+  font-size: 15px;
+  transition: 0.5s ease-in-out;
+	display: none;
+	opacity: 0;
+}
+.cl-M i
+{
+  color:#000;
+  font-size: 20px;
+}
+.cl-M a
+{
+  font-size: 20px;
+}
+.cl-M1.active, .cl-M2.active, .cl-M3.active
+{
+  transition: 0.5s;
+  display: block;
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+

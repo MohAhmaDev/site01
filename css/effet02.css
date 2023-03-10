@@ -1,0 +1,110 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'POP', sans-serif;
+}
+
+
+
+.conteneur
+{
+	background: #2abcff ;
+	height: auto;
+	min-height: 100vh;
+	overflow: hidden;
+}
+.box
+{
+	position: relative;
+	left: 50%;
+	margin-top: 400px;
+	transform: translate(-50%,-50%);
+	width: 600px;
+	height: 400px;
+	background: black ;
+}
+
+
+.about
+{
+	padding: 40px;
+	color:white;
+	text-align: center;
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%);
+}
+.about h2
+{
+	padding: 0;
+	margin: 0;
+	margin-bottom: 10px;
+	font-size:30px;
+	text-transform: uppercase;
+}
+.figure
+{
+	width: 100%;
+	height: 100%;
+}
+.figure:before
+{
+	content: '';
+	position: absolute;
+    top:0;
+    left:0;
+    width:50%;
+    height: 100%;
+    background: url('../images/banner02.jpg') ; 
+    background-size: cover;
+    transform-origin: bottom;
+    transition: .5s ;  
+}
+.box:hover .figure:before
+{
+	transform: rotateX(90deg) translateY(50%); 
+
+}
+.figure:after
+{
+	content: '';
+	position: absolute;
+    top:0;
+    right:0;
+    width:50%;
+    height: 100%;
+    background: url('../images/banner02.jpg') ;
+    background-size: cover;    
+    transform-origin: top;
+    transition: .5s ;  
+   	background-position: 300px;  
+}
+.box:hover .figure:after
+{
+	transform: rotateX(90deg) translateY(-50%);
+}
+
+@media (max-width:600px) 
+{
+	.box
+	{
+		width: 300px;
+		height: 600px;
+	}
+	.figure:before
+	{
+		display: none;
+	}
+	.figure:after
+	{
+		display: none;
+	}
+	.figure
+	{
+		background: url('../images/banner-2.jpg') no-repeat;
+		background-size: cover;
+	}
+
+}

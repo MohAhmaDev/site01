@@ -1,0 +1,149 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'POP', sans-serif;
+}
+.containerCrd01
+{
+    background: #18aaff;
+    display: flex;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    padding: 25px;
+    flex-direction: column;
+}
+.contentTitle
+{
+    height: 85px;
+    color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+
+}
+.contentTitle h2
+{
+    font-size:65px;    
+}
+.contentCrd01
+{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0 25px;
+    
+}
+.BoxCrd
+{
+    width: 50%;
+    height: 550px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.BoxCrd-part01
+{
+    cursor: pointer;
+    column-gap: normal;
+    width: 48%;
+    height: 250px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    overflow: hidden;
+    color: #fff;
+    transition: .5s;
+}
+.BoxCrd-part01:hover
+{
+    background: red;
+    transition: .5s ease-in-out;
+}
+.p02
+{
+    height: 300px;
+}
+.p04
+{
+    height: 200px;
+}
+.p01, .p03
+{
+    margin-top: -50px;
+}
+
+.d01,.d03
+{
+    height: 140px;
+    margin-top: -155px;
+
+}
+
+.d04
+{
+    width: 100%;
+    height: 200px;
+}
+.d02
+{
+    height: 300px;
+}
+
+
+
+.containerCrd02
+{
+    height: 575px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #000;
+    background: #007aff;
+    padding: 25px;
+}
+.C02
+{
+
+    margin-bottom: 40px;
+}
+.hide
+{
+    margin-bottom: 15px;
+}
+
+
+
+@media (max-width:800px) 
+{
+    .BoxCrd
+    {
+        width: 100%;
+    }
+}
+
+@media (max-width:500px) {
+    
+    .BoxCrd
+    {
+        width: 100%;
+    }
+    .BoxCrd-part01
+    {
+        width: 100%;
+        margin-top: 25px;
+        min-height: 350px;
+        height: auto;
+    }
+}
+
+

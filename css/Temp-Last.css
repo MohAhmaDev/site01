@@ -1,0 +1,109 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'POP',sans-serif;
+}
+
+.Temp-container
+{
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+.cardLst {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "text" "stats";
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: roboto;
+    text-align: center;
+    width: 300px;
+
+  }
+  .cardLst-image {
+    grid-area: image;
+  }
+  .cardLst-text {
+    grid-area: text;
+  }
+  .cardLst-stats {
+    grid-area: stats; 
+  }
+  .cardLst-image {
+    grid-area: image;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .cardLst:nth-child(1) .cardLst-image
+  {
+    background: url("../images/Laptop01.jpg");
+    background-size: cover;
+
+  }
+  .cardLst:nth-child(2) .cardLst-image
+  {
+    background: url("../images/Laptop02.jpg");
+    background-size: cover;
+
+  }
+  .cardLst:nth-child(3) .cardLst-image
+  {
+    background: url("../images/Laptop03.jpg");
+    background-size: cover;
+
+  }
+
+  .cardLst-text {
+    grid-area: text;
+    margin: 25px;
+  }
+  .cardLst-text .date {
+    color: rgb(255, 7, 110);
+    font-size:13px;
+  }
+  .cardLst-text p {
+    color: grey;
+    font-size:15px;
+    font-weight: 300;
+  }
+  .cardLst-text h2 {
+    margin-top:0px;
+    font-size:28px;
+  }
+  .cardLst-stats {
+    grid-area: stats; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: rgb(255, 7, 110);
+  }
+  .cardLst-stats .stat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    padding:10px;
+  }
+  .cardLst:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  }
+  .cardLst {
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin:30px;
+  }

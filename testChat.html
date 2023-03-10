@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/carousel.css">	
+
+
+
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+  <link rel="stylesheet" type="text/css" href="css/new-card2.css">
+	<link rel="stylesheet" type="text/css" href="css/Parallax.css">
+	<link rel="stylesheet" type="text/css" href="css/new-card.css">  
+  <link rel="stylesheet" href="css/template08.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" type="text/css" href="css/CocaTemplate.css">
+  <link rel="stylesheet" href="css/Card-sp.css">
+  <link rel="stylesheet" type="text/css" href="css/cardS1.css">
+  <link rel="stylesheet" href="css/cardL.css">
+
+  <link rel="stylesheet" href="fonts/style.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/testBanner.css">
+  <link rel="stylesheet" href="css/contact_form.css">
+  <link rel="stylesheet" type="text/css" href="css/cardSh.css">
+
+  <style>
+    .tech-plus
+    {
+      position: relative;
+        font-weight: 900;
+        color: #1E90FF;
+        -webkit-text-stroke: 1px #fff;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 50px;
+        text-align: center;
+        margin-top: 50px;
+      cursor: pointer;
+      transition: .5s ease-in;
+    }
+    .tech-plus:hover
+    {
+      color: #fff;
+      -webkit-text-stroke: 1px #1E90FF;
+    }
+    @media (max-width:471px) 
+    {
+      .text01
+      {
+        margin-top: 100px;
+      }  
+    }
+
+  </style>
+
+	<title> my Banner site </title>
+</head>
+<body>
+
+
+ <!-- Video menue -->
+  <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
+
+
+<!---->
+
+
+<!--services-->
+
+<!---->
+
+<!--SMARTPHONE-->
+
+<!---->
+
+<!--TECH-->
+
+<!---->
+  
+
+<!--PUB-->
+
+<!---->
+
+
+
+<!--PLAY-->
+
+<!---->
+
+<!--ACCESSOIRE-->
+
+<!---->
+
+<!--FORM LOGIN/CONNTACT-->
+<div class="from-contact">
+  <div class="container-from">
+      <div class="blueBg">
+          <div class="box-f signin">
+              <h2>Vous avez un compte ?</h2>
+              <button class="signinBtn"> Se connecter </button>
+          </div>
+          <div class="box-f signup">
+              <h2>Pas encor de compte ?</h2>
+              <button class="signupBtn"> S'inscrir </button>
+          </div>
+      </div>
+      <div class="fromBx">
+          <div class="fromC signinFrom">
+              <form>
+                  <h3> se conecter </h3>
+                  <input id="user_name" type="text" placeholder="Nom d'utilisateur" onclick="this.placeholder='';" onblur="this.placeholder='Nom d\'utilisateur'">
+                  <input id="user_mdp"  type="password" placeholder="mot de pass" onclick="this.placeholder='';" onblur="this.placeholder='mots de pass'">
+                  <input type="submit" value="login" id="search2">
+                  <a href="#" class="forgot"> mot de pas oublier ?</a>
+              </form>
+          </div>
+          <div class="fromC signupFrom">
+              <form action="" id="from1">
+                  <h3> s'inscrir </h3>
+                  <input type="text" id="name_user" class="input-error" name="name" placeholder="Nom d'utilisateur" onclick="this.placeholder='';" onblur="this.placeholder='Nom d\'utilisateur'">
+                  <input type="email" id="mail_user" name="email" placeholder="Adress mail" onclick="this.placeholder='';" onblur="this.placeholder='Adress mail'">
+                  <input type="password" id="mdp_user" name="mdp" placeholder="mot de pass" onclick="this.placeholder='';" onblur="this.placeholder='mot de pass'">
+                  <input type="submit" id="search1" name="valid" value="Registrer">
+                  <a href="#" class="forgot"> mot de pas oublier ?</a>
+              </form>
+          </div>
+      </div>
+  </div>
+  <div id="form-message">
+  </div>
+</div>
+<section class="chat" style="padding: 50px; " >
+  <div class="container-fluid modif"> 
+    <form id="from-comment" class="needs-validation" novalidate>
+      <!--<div class="form-group">
+
+        <label for="Email"> Email/mdp </label>
+        <input class="form-control" type="text" name="config" id="config" placeholder="Confirmation" required>
+      
+      </div> -->
+      <div class="form-group" id="conection">
+          <label for="firstName"> Email/mdp </label>
+          <input class="form-control" type="text" name="author" id="author"placeholder="Nickname ?" required>        
+      </div> 
+
+      <div class="form-group">
+        <label for="pwd">Message:</label>
+        <textarea class="form-control" data-user="" id="content" name="content" placeholder="Type in your message right here bro !" required></textarea>
+        <div class="invalid-feedback">
+          aucun message n'a éte sésie 
+        </div>   
+      </div>
+
+      <button type="submit" class="btn btn-primary" id="mail-check">Submit</button>
+    </form>
+  </div>
+  <br>
+  <div class="messages" style="background-color: #fff; height: auto;">
+      <div class="container mt-5">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-8">
+              
+            </div>
+        </div>
+      </div>
+    </div>
+    <br>
+  <div id="result"></div>
+</section>
+<!---->
+
+<!--FOOTER-->
+
+<!---->
+<script src="js/aos.js"></script>
+<script src="js/main.js"></script>    
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+
+    var bool = false;
+    let USER = "";
+
+    //conection server---------------------
+    $("#search1").click(function(event){
+        event.preventDefault();
+
+        var name = $("#name_user").val(),
+                email = $("#mail_user").val(),
+                mdp = $("#mdp_user").val();
+
+        $.ajax({        
+            type: "POST",
+            data: {name:name, email:email, mdp:mdp},
+            url: 'server/Login_action.php',
+            success:function(Reponse)
+            {
+                request = JSON.parse(Reponse)
+                $("#form-message").html(request.result);
+            }
+        })
+    });
+
+    $("#search2").click(function(event){
+      event.preventDefault();
+
+      let name = $("#user_name").val(),
+      mdp = $("#user_mdp").val();
+
+      $.ajax({        
+          type: "POST",
+          data: {name:name, mdp:mdp},
+          url: 'server/Login_action_connect.php',
+          success:function(Reponse)
+          {
+              request = JSON.parse(Reponse);
+              console.log(request);
+              $("#form-message").html(request.result);
+              bool = request.reponse;
+              user = request.mdp;
+              session(user);
+
+          }
+      })
+    });
+    //--------------------------------------
+
+
+    function session(user) {
+      if(bool) {
+        $('#conection').fadeOut(1000);
+        USER = user; 
+        document.getElementById('content').setAttribute('data-user', USER);
+      } else {
+        document.getElementById('content').removeAttribute('data-user');
+        return null;
+      }      
+    }
+
+
+   /* $("#mail-check").click(function(event){
+      event.preventDefault();
+      if (bool) {
+        console.log("true");
+      }
+      else {
+        console.log("flase");
+      }
+    })*/
+
+
+    //--------------------------------------
+
+
+
+    // effect*************************
+    const signinBtn = document.querySelector('.signinBtn');
+    const signupBtn = document.querySelector('.signupBtn');
+    const fromBx = document.querySelector('.fromBx');
+    const fromContact = document.querySelector('.from-contact');
+
+    signupBtn.onclick = function() {
+        fromBx.classList.add('active');
+        fromContact.classList.add('active');
+    }
+    signinBtn.onclick = function() {
+        fromBx.classList.remove('active');
+        fromContact.classList.remove('active');
+    }
+    //******************************
+
+
+    var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        autoplay:true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+        },
+        pagination: {
+        el: '.swiper-pagination',
+        },
+        loop: true,
+    });
+
+    function toggleMenu(){
+        const menuToggle = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+
+    const menuToggle = document.querySelector('.toggle');
+    const showcase = document.querySelector('.showcase');
+
+    menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('active');
+    showcase.classList.toggle('active');
+    })
+
+    function imgSlider(anything,color) {
+        document.querySelector(".canatte").src = anything ;
+        document.querySelector(".sec").style.backgroundColor = color;
+    }
+    function ToggleMenue(params) {
+        const toggleMenu1 = document.querySelector('.cl-M1');
+        const toggleMenu2 = document.querySelector('.cl-M2');
+        const toggleMenu3 = document.querySelector('.cl-M3');
+        toggleMenu1.classList.toggle('active');     
+        toggleMenu2.classList.toggle('active');     
+        toggleMenu3.classList.toggle('active');     
+    }
+
+
+    /**/
+  /**
+   * Il nous faut une intervale qui demande le rafraichissement
+   * des messages toutes les 3 secondes et qui donne 
+   * l'illusion du temps réel.
+   */
+
+
+    
+</script>
+<script src="js/comment.js"></script>
+
+
+
+</body>
+</html>
+
+
+
+<!--/*var name = $("#name_user").val(),
+        email = $("#mail_user").val(),
+        mdp = $("#mdp_user").val(),
+        check = $("#search1").val();
+$("#form-message").load("server/Login_action.php",{
+    name:name,
+    email:email,
+    mdp:mdp,
+    check:check,
+}, );*/-->

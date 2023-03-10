@@ -1,0 +1,231 @@
+*
+{
+	font-family: 'POP',sans-serif;
+	margin: 0;
+	padding:0;
+	box-sizing: border-box; 
+}
+.sec
+{
+	position:relative;
+	width:100%;
+ 	min-height: 100vh;
+ 	padding:100px;
+ 	display: flex;
+ 	justify-content: space-between;
+ 	align-items: center;
+ 	background: #111;
+ 	padding-top: 15px;
+ 	padding-bottom: 15px;
+ 	transition: 0.5s ;
+}
+.nc2-header
+{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	padding:20px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nc2-header .logo-png
+{
+	position: relative;
+	max-height: 80px;
+}
+.nc2-header ul
+{
+	position: relative;
+	display: flex;
+}
+.nc2-header ul li
+{
+	list-style: none;
+}
+.nc2-header ul li a
+{
+	margin-left: 40px;
+	font-weight: 400;
+	color:#fff;
+	display: inline-block;
+	text-decoration: none; 
+}
+.content-png
+{
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.content-png .textBox
+{
+	position: relative;
+	max-width: 600px;
+}
+.content-png .textBox h2 
+{
+	color: #fff;
+	font-size: 4em;
+	line-height: 1.5em;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+.content-png .textBox h2 span
+{
+	font-size: 2em;
+}
+.content-png .textBox p
+{
+	color:#fff;
+}
+.content-png .textBox a
+{
+	display: inline-block;
+	margin-top: 20px;
+	padding: 8px 20px;
+	border-radius: 40px;
+	color: #111;
+	background: #fff;
+	font-weight: 400;
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.content-png .textBox a:hover
+{
+	background: red;
+	color: #fff;
+	transition: 0.5s;
+}
+.content-png .imgBox
+{
+	width:300px;
+	display: flex;
+	padding-right: 50px;
+	justify-content: flex-end;
+	margin-top: 50px;
+}
+.content-png .imgBox img
+{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.thumb
+{
+	position: absolute;
+	left: 50%;
+	bottom: 20px;
+	transform: translateX(-50%);
+	display: flex;
+}
+.thumb li 
+{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.thumb img
+{
+	max-width: 30px;
+}
+
+.thumb li:hover
+{
+	transform: translateY(-15%);
+}
+.sci
+{
+	position: absolute;
+	top:50%;
+	right: 30px;
+	transform: translateY(-50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.sci li
+{
+	list-style: none;
+}
+.sci li a
+{
+	color:#fff;
+	display: inline-block;
+	filter:invert(1);
+	margin: 5px 0;
+	transform: scale(0.6); 
+}
+
+
+@media (max-width: 991px)
+{
+
+	.sec
+	{
+		padding: 40px;
+		padding-bottom: 140px;
+	}
+	.nc2-header
+	{
+		padding: 20px 40px; 
+	}
+	.nc2-header .logo-png
+	{
+		position: relative;
+		max-width: 60px;
+	}
+	.nc2-header ul 
+	{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: #fff;
+		z-index: 1;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		transition: 0.2s;
+	}
+	.content-png
+	{
+		flex-direction: column;
+		max-width: 100%;
+	}
+	.content-png .textBox
+	{
+		position:relative;
+		max-width: 100%;
+		padding-right: 20px;
+	}
+	.content-png .textBox h2
+	{
+		font-size: 3em;
+	}
+	.content-png .textBox a
+	{
+		font-size: 14px;
+		padding: 8px 15px;
+	}
+	.content-png .imgBox
+	{
+		width: 100%;
+		display: flex;
+		padding-right: 0;
+		margin-top: 50px;
+		justify-content: center;	
+	}
+	.content-png .imgBox img
+	{
+		max-width: 300px;
+	}
+}

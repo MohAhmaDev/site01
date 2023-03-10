@@ -1,0 +1,186 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'POP', sans-serif;
+}
+.secL
+{
+    position: relative;
+    background: #f0f8f0;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: background .5s;
+    flex-wrap: wrap;
+}
+.secL.dark 
+{
+    background: #24292d;
+}
+.secL .cardL
+{
+    position: relative;
+    width: 300px;
+    margin: 50px;
+    height: 380px;
+    background: #fff;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.025);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background .5s;
+
+}
+.secL.dark .cardL
+{
+    background: #323840;
+}
+.secL .cardL .contentL,
+.secL .cardL .imgText
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.secL .cardL .imgText .imgBxL
+{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.secL .cardL .imgText .imgBxL img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.secL .cardL .imgText h3
+{
+    font-weight: 500;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    text-align: center;
+    color:#2fa1ff;
+}
+.secL .cardL .imgText h3 span
+{
+    font-weight: 400;
+    color: #777;
+    font-size: 0.75em;
+}
+.secL.dark .cardL .imgText h3 span
+{
+    color: #ccc;
+}
+.secL .cardL .sciL
+{
+    display: flex;
+    margin-top: 15px;
+}
+.secL .cardL .sciL li
+{
+    list-style: none;
+}
+.secL .cardL .sciL li a
+{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    background: #e9f5ff;
+    color: #2fa1ff;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: .5s;
+}
+.secL.dark .cardL .sciL li a
+{
+    background: #404852;
+}
+.secL .cardL .sciL li a:hover .fab
+{
+    color: #fff;
+}
+.secL .cardL .sciL li a .fab
+{
+    position: relative;
+    z-index: 1000;
+}
+.secL .cardL .sciL li a:before 
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #2fa1ff;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.5s;
+}
+.secL .cardL .sciL li a:hover:before 
+{
+    transform: scale(1);
+}
+.toggleL
+{
+    position: absolute;
+    top:10px;
+    right: 20px;
+    background: #e9f5ff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.secL.dark .cardL .toggleL
+{
+    background: #404852;
+}
+.PrL
+{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    background: #e9f5ff;
+    padding: 5px;
+    text-align: center;
+    color: #2fa1ff;
+    width: 175px;
+    height: 35px; 
+    border-radius: 20px;
+}
+.secL.dark .cardL p
+{
+    background: #404852;
+}
+.toggleL::before
+{
+    content: '\f186';
+    font-family: "Font Awesome 5 Free";
+    color: #2fa1ff;
+}
+
+
+.secL.dark .toggleL::before
+{
+    content: '\f185';
+}

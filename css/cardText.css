@@ -1,0 +1,61 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'POP',sans-serif;
+	box-sizing: border-box;
+}
+
+
+.BIG
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: url("../images/cardText09.jpg") ;
+	background-size: cover;
+	min-height: 100vh;
+	padding: 50px;
+	height: auto;
+}
+.containerCard
+{
+	width: 900px;
+	padding: 30px;
+	box-sizing: border-box;
+	cursor: pointer;
+	border-radius: 10px;
+	font-weight: bold;
+	background: #fff;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+	transition: 0.5s ease-in-out;
+}
+.containerCard:hover
+{
+	background: #1E90FF;
+	color: white;
+}
+.Circle
+{
+	width: 200px;
+	height: 200px;
+	background: url("../images/Gaming3.jpg");
+	background-size:cover; 
+	border-radius: 50%;
+	float: left;
+	shape-outside: circle();
+	margin: 60px 30px 30px 0;
+}
+.containerCard p 
+{
+	margin: 0;
+	padding: 0;
+	text-align: justify;
+	line-height: 22px;
+}
+.containerCard h2
+{
+	margin: 0 0 20px;
+	padding: 0;
+	font-size: 30px;
+}

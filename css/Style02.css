@@ -1,0 +1,93 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'POP', sans-serif;
+}
+
+.Container-Top
+{
+    height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #111;
+}
+.Container-1
+{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+.hr
+{
+    border-top: 2px solid #fff;
+}
+.Title-Top
+{
+    padding-top: 25px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    height: 100px;
+    font-weight: 900;
+    font-size: 3.5em;
+}
+ 
+  
+.containe-Top
+{
+    height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.T-Top
+{
+    color: #fff;
+    height: 45px;
+    overflow: hidden;
+	transition: 0.5s;
+}
+  
+.T-Top span
+{
+    cursor: pointer;
+    transition: .5s;
+    position: relative;
+    padding-top: 10px ;
+    font-size: 25px;
+
+}
+.T-Top a
+{    
+    cursor: pointer;
+    padding-top: 15px;
+    outline: none;
+    color: aqua !important;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    transition: .5s;
+}
+.T-Top a:hover
+{
+    color: #fff !important;
+    transition: .5s ease-in-out;
+}
+
+
+
+
+
+@keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }

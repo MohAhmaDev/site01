@@ -1,0 +1,206 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'POP',sans-serif;
+	box-sizing: border-box;
+	
+}
+.big-container-scrl
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	min-height: 100vh;
+	background: #111;
+	padding: 50px;
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+.container-scrl
+{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+
+}
+.container-scrl .box-scrl
+{
+	position: relative;
+	width: 350px;
+	height: 275px;
+	overflow: hidden;
+	transition: 0.5s;
+	box-sizing: border-box;
+}
+.container-scrl .box-scrl:hover
+{
+	z-index: 2;
+	transform: scale(1.25);
+	box-shadow: 0 25px 40px rgba(0,0,0,.5);
+}
+.container-scrl .box-scrl .imgBx-scrl
+{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+.container-scrl .box-scrl .imgBx-scrl:before
+{
+	content: '';
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background: linear-gradient(180deg,red,#000);
+	mix-blend-mode: multiply;
+	opacity: 0;
+	transition: 0.5s;
+}
+.container-scrl .box-scrl:nth-child(1) .imgBx-scrl:before
+{
+	background: linear-gradient(180deg,yellow,#000);
+}
+.container-scrl .box-scrl:nth-child(2) .imgBx-scrl:before
+{
+	background: linear-gradient(180deg,rgb(245, 33, 245),#000);
+}
+.container-scrl .box-scrl:nth-child(3) .imgBx-scrl:before
+{
+	background: linear-gradient(180deg,rgb(252, 56, 88),#000);
+}
+.container-scrl .box-scrl:nth-child(4) .imgBx-scrl:before
+{
+	background: linear-gradient(180deg,rgb(58, 22, 223),#000);
+}
+.container-scrl .box-scrl:nth-child(5) .imgBx-scrl:before
+{
+	background: linear-gradient(180deg,rgb(10, 194, 250),#000);
+}
+.container-scrl .box-scrl:nth-child(6) .imgBx-scrl:before
+{
+	background: linear-gradient(180deg,rgb(54, 255, 4),#000);
+
+}
+.container-scrl .box-scrl:hover .imgBx-scrl:before
+{
+	opacity: 1;
+}
+.container-scrl .box-scrl .imgBx-scrl img
+{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.container-scrl .box-scrl .content-scrl
+{
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	display: flex;
+	padding: 20px;
+	align-items: flex-end;
+	box-sizing: border-box;
+}
+.container-scrl .box-scrl .content-scrl h2
+{
+	color:#fff;
+	transition: 0.5s;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+	font-size: 20px;
+	transform: translateY(200px);
+	box-sizing: border-box;
+}
+.container-scrl .box-scrl:hover .content-scrl h2
+{
+	transform: translateY(0);
+	transition-delay: 0.6s;
+}
+.container-scrl .box-scrl .content-scrl p
+{
+	color: #fff;
+	transition: 0.5s;
+	font-size: 14px;	
+	transform: translateY(200px);
+	box-sizing: border-box;
+}
+.container-scrl .box-scrl:hover .content-scrl p
+{
+	transform: translateY(0);
+	transition-delay: 0.7s;	
+}
+.container-scrl .box-scrl .content-scrl button
+{
+	margin-top:10px; 
+	padding: 0px 25px;
+    background: transparent;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 40px;
+    border: 1px solid #00BFFF;
+    letter-spacing: 2px;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    transition: 0.5s;
+    transform: translateY(200px);
+    color: white;
+    box-sizing: border-box;
+
+}
+.container-scrl .box-scrl:hover .content-scrl button
+{
+	transform: translateY(0);
+	transition-delay: 0.8s;	
+}
+.container-scrl .box-scrl .content-scrl button:hover
+{
+background: #00BFFF;
+}
+
+
+
+
+
+
+@media (max-width:500px) 
+{
+    .container-scrl .box-scrl:hover
+    {
+        z-index: 2;
+        transform: scale(1);
+        box-shadow: 0 25px 40px rgba(0,0,0,.5);
+    }  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
